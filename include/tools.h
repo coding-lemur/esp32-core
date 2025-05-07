@@ -6,11 +6,21 @@
 #include <LittleFS.h>
 #include <ArduinoJson.h>
 
-String getChipId();
-double round2(double value);
-int getRssiAsQuality(int rssi);
-unsigned long getUnixTime();
-void loadFilesToArray(File root, JsonArray list);
-JsonDocument createInfoJson(String version, String chipId);
+namespace coding_lemur
+{
+    class Tools
+    {
+    public:
+        static String getChipId();
+        static double round2(double value);
+        static int getRssiAsQuality(int rssi);
+        static unsigned long getUnixTime();
+        static void loadFilesToArray(File root, JsonArray list);
+        static JsonDocument createInfoJson(String version, String chipId);
+
+    private:
+        Tools() = delete; // disallow constructor
+    };
+}
 
 #endif // TOOLS_H
