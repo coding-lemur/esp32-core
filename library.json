@@ -1,6 +1,6 @@
 {
     "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
-    "name": "tools-lib",
+    "name": "coding-lemur-esp32-core",
     "version": "1.0.0",
     "description": "Utility functions for ESP32 projects",
     "keywords": [
